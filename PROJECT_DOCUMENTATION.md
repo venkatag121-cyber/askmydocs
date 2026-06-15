@@ -1,7 +1,6 @@
 # AskMyDocs — Complete Project Documentation
 
 **Built by:** Prashanth Duddukuri  
-**Live App:** https://prashanthduddukuri-askmydocs.hf.space  
 **Date:** May 2026
 
 ---
@@ -299,7 +298,7 @@ This reads the secret value from the environment at runtime.
 
 The pipeline works like this: the PDF text is extracted using PyMuPDF, split into 500-word overlapping chunks, and converted to 384-dimensional vectors using sentence-transformers. Those vectors are stored in a FAISS index. When a user asks a question, it's converted to the same vector space, FAISS finds the 5 most similar chunks using L2 distance, and those chunks plus the question are sent to Claude AI which answers based only on that context.
 
-I deployed it as a Docker container on Hugging Face Spaces. It's live at prashanthduddukuri-askmydocs.hf.space."
+I deployed it as a Docker container on Hugging Face Spaces.
 
 ---
 
@@ -315,4 +314,4 @@ I deployed it as a Docker container on Hugging Face Spaces. It's live at prashan
 
 ---
 
-*Documentation written by Prashanth Duddukuri — May 2026*
+*Documentation written by Venkata Ghantasala — May 2026*
